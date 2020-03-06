@@ -76,8 +76,8 @@ def translate_(file_path, dest_lang):
 
 def add_translation(org, tran, dest_lang):
     """
-    add translation for each row of data in original file based on the json file
-    :param org: original data file
+    add translation for each row of preprocessed_data in original file based on the json file
+    :param org: original preprocessed_data file
     :param tran: json file including translations
     :param dest_lang: destination language
     :return:
