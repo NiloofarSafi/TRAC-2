@@ -115,6 +115,28 @@ def give_emoji_free_text(text):
     return clean_text
 
 
+def augment_data(dest_lang):
+
+    lang_dict = {'en':'eng', 'hi':'hin', 'bn':'iben'}
+    languages = [val for key, val in lang_dict.items()]
+
+    main_file = lang_dict[dest_lang]+'/trac2_'+lang_dict[dest_lang]+'_train.csv'
+    main_data = pd.read_csv(main_file, encoding='utf-8')
+
+    translation_col = dest_lang+'_translation'
+
+    for lang in languages:
+        if lang != lang_dict[dest_lang]:
+            for option in ['_train_translated.csv', '_dev_translated.csv']:
+                t_file = lang+'/trac2_'+lang+option
+                translation = pd.read_csv(t_file, encoding='utf-8')
+                for idx, row in translation.iterrows():
+                    main_data = main_data.append({'ID': row['ID'], 'Text': row[translation_col], 'Sub-task A': row['Sub-task A'], 'Sub-task B': row['Sub-task B']}, ignore_index=True)
+
+    output_file = lang_dict[dest_lang]+'/trac2_'+lang_dict[dest_lang]+'_train_final.csv'
+    main_data.to_csv(output_file)
+
+
 
 if __name__ == '__main__':
 
@@ -122,5 +144,7 @@ if __name__ == '__main__':
 
     #translate_('iben/trac2_iben_train.csv', 'en')
 
-    add_translation('iben/trac2_iben_dev.csv', 'iben/trac2_iben_dev-en.json', 'en')
+    #add_translation('iben/trac2_iben_dev.csv', 'iben/trac2_iben_dev-en.json', 'en')
+
+    augment_data('en')
 
