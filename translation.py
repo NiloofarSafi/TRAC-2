@@ -1,4 +1,4 @@
-# author = "Niloofer"
+__author__ = "Niloofer Safi Samghabadi"
 
 from googletrans import Translator
 import time

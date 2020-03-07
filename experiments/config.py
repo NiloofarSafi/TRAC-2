@@ -11,8 +11,7 @@ idx2gen = {0: 'NGEN', 1: 'GEN'}
 VOCAB_PATH = '../torch_moji/vocabulary.json'
 maxlen = 300
 
-batch_size = 8
-btch_size = 32
+batch_size = 26
 
 device = torch.device('cpu')
 if torch.cuda.is_available():

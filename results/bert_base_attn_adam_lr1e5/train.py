@@ -107,9 +107,6 @@ print('Train Loaded')
 validation_set = [val for key,val in features_dev.items()]
 print('Validation Loaded')
 
-# train_set = train_set[:100]
-# validation_set = validation_set[:100]
-
 print('Data Split: Train (%d), Dev (%d)' % (len(train_set), len(validation_set)))
 
 # ----------------------------------------------------------------------------
@@ -259,8 +256,8 @@ def evaluate(model, dev_set):
             batch_y2.append(dev_set[i]['y2'])
 
 
-            y1_true.append(C.label2idx[dev_set[i]['label']])
-            y2_true.append(C.gen2idx[dev_set[i]['gen']])
+            y1_true.append(dev_set[i]['y1'])
+            y2_true.append(dev_set[i]['y2'])
 
             if len(batch_x) == batch_size or i == len(dev_set) - 1:
                 mask = masking(batch_x)

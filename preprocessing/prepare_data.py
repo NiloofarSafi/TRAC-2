@@ -1,12 +1,9 @@
 from __future__ import division
-import nltk
 import re
-from collections import Counter
 import json
 import numpy as np
 import pandas as pd
 import os
-import statistics
 from transformers import *
 import sys
 sys.path.append('../')
