@@ -24,7 +24,11 @@ class BERTRA(nn.Module):
         self.attention = BaseAttention(self.embedding_dim)
 
         self.sequential = nn.Sequential(
-            nn.Linear(self.embedding_dim , 100),
+            nn.Linear(self.embedding_dim, 500),
+
+            nn.BatchNorm1d(500),
+            nn.Dropout(0.5),
+            nn.Linear(500 , 100),
 
             nn.BatchNorm1d(100),
             nn.Dropout(0.5),
