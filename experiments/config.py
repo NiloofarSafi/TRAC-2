@@ -8,9 +8,6 @@ idx2label = {0: 'NAG', 1: 'OAG', 2: 'CAG'}
 gen2idx = {'NGEN': 0, 'GEN': 1}
 idx2gen = {0: 'NGEN', 1: 'GEN'}
 
-VOCAB_PATH = '../torch_moji/vocabulary.json'
-maxlen = 300
-
 batch_size = 26
 
 device = torch.device('cpu')
