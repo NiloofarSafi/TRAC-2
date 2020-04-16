@@ -1,6 +1,7 @@
 import torch
 
 bert_model = 'bert-base-uncased'
+# bert_model = 'bert-base-multilingual-cased'
 
 label2idx = {'NAG': 0, 'OAG': 1, 'CAG': 2}
 idx2label = {0: 'NAG', 1: 'OAG', 2: 'CAG'}
