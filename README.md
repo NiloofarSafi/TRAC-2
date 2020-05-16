@@ -1,4 +1,4 @@
-# TRAC-2
+# Aggression and Misogyny Detection using BERT: A Multi-Task Approach
 Our system for TRAC-2 shared task on aggression identification. <br>
 If you find this useful for your research work then please cite our paper below:
 
