@@ -3,7 +3,7 @@ Our system for TRAC-2 shared task on aggression identification. <br>
 If you find this useful, please cite our paper below:
 
     @inproceedings{Niloofar-etal-TRAC2020-AggressionDetection-BERT-MultiTask,
-    title = {Aggression and Misogyny Detection using BERT: A Multi-Task Approach},
+    title = {Aggression and Misogyny Detection using {BERT}: A Multi-Task Approach},
     author = {Safi Samghabadi, Niloofar and Patwa, Parth and PYKL, Srinivas and Mukherjee, Prerana and Das, Amitava and Solorio, Thamar}
     booktitle = {Proceedings of the Second Workshop on Trolling, Aggression and Cyberbullying ({TRAC}-2020)},
     month = {May},
