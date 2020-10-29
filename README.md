@@ -13,7 +13,7 @@ If you find this useful, please cite our paper below:
      pages = {126--131},
     url = {https://www.aclweb.org/anthology/2020.trac-1.20/}}
     
-Paper: [Aggression and Misogyny Detection using BERT: A Multi-Task Approach](http://panlingua.co.in/trac-2/pdf/2020.trac2-1.20.pdf) <br>
+Paper: [Aggression and Misogyny Detection using BERT: A Multi-Task Approach](https://www.aclweb.org/anthology/2020.trac-1.20/) <br>
 The pre-trained models for all three languages (English, Hindi and Bengali) can be found [in this drive](https://drive.google.com/file/d/1tcVhT1525pltaiTOZStwuCvNPb3X8194/view?usp=sharing). <br>
 The datasets are available [here](https://docs.google.com/forms/d/e/1FAIpQLSesLjGKLQlE3dmQNZUEl5QJVno7NngeLTP9XvIMCvpZu7sXNg/viewform).
 
